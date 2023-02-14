@@ -1,5 +1,5 @@
 import './Header.css';
-import logo from './../../Assets/img/logo.gif';
+import logo from './../../assets/img/logo.gif';
 
 console.log(logo);
 

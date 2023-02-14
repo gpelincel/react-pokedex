@@ -22,7 +22,7 @@ function Pokecard(props) {
             }
         });
 
-        let img = require(`../../Assets/icons/${stats.types[0].type.name}.svg`);
+        let img = require(`../../assets/icons/${stats.types[0].type.name}.svg`);
 
         return (
             <div className="card">
