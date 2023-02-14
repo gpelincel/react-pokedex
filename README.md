@@ -8,12 +8,10 @@ This project was created, mostly, to learn about React, but also to choose wich 
 
 # 📸 Project screenshots
 
-![alt text][def]
+<img src="./src/assets/screenshots/screen-1.png">
 
 ### Todo list
 
 - [X] List all pokemons
 - [ ] List a pokemon individually
 - [ ] Search system
-
-[def]: ./src/assets/screenshots/screen-1.png
