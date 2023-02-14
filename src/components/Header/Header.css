@@ -1,0 +1,25 @@
+header {
+  background: #2E2140;
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+header .logo {
+  display: flex;
+  height: 10vh;
+}
+header .search-input {
+  width: 25%;
+}
+header .search-input input {
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+  font-size: 1.5em;
+}
+header .search-input input:focus {
+  outline: none;
+}/*# sourceMappingURL=Header.css.map */

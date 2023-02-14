@@ -1,0 +1,51 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: auto;
+    text-align: center;
+    border-radius: 7px 7px 5px 5px;
+    text-transform: capitalize;
+    background: #FFF;
+    padding: 0 0 5px 0;
+
+    .type-wrapper {
+        z-index: 0;
+        border-radius: 5px 5px 0 0;
+        position: relative;
+        overflow: hidden;
+
+        .type-icon {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            opacity: 30%;
+            right: -50px;
+            top: -50px;
+            z-index: -1;
+        }
+
+        .card-body {
+            position: relative;
+
+            img {
+                z-index: 2;
+                width: 10vw;
+                padding-bottom: 50px;
+            }
+        }
+    }
+
+    .card-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        .type-pill {
+            text-transform: capitalize;
+            padding: 8px;
+            border-radius: 5px;
+        }
+    }
+}

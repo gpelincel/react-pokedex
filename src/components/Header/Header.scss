@@ -1,0 +1,28 @@
+header {
+    background: #2E2140;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    .logo {
+        display: flex;
+        height: 10vh;
+    }
+
+    .search-input {
+        width: 25%;
+        input {
+            border: none;
+            border-radius: 5px;
+            padding: 8px;
+            width: 100%;
+            font-size: 1.5em;
+        }
+
+        input:focus{
+            outline: none;
+        }
+    }
+}

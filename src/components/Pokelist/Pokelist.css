@@ -1,0 +1,7 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background: #2E2140;
+  padding: 40px;
+}/*# sourceMappingURL=Pokelist.css.map */

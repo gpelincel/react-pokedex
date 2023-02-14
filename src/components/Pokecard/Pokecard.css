@@ -1,0 +1,21 @@
+.card {
+  width: auto;
+  background: #FFF;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+.card .card-body img {
+  width: 15vw;
+}
+.card .card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.card .card-footer .type-pill {
+  background: greenyellow;
+  padding: 8px;
+  border-radius: 20px;
+}/*# sourceMappingURL=Pokecard.css.map */
