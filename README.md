@@ -8,7 +8,7 @@ This project was created, mostly, to learn about React, but also to choose wich 
 
 # 📸 Project screenshots
 
-![alt text]url('./src/assets/screenshots/screen-1.png')
+<img src="./src/assets/screenshots/screen-1.png">
 
 ### Todo list
 
