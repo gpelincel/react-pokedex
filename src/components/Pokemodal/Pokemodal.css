@@ -1,0 +1,60 @@
+.hidden {
+  display: none;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+}
+.modal .modal-content {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background: #13aa5e;
+  color: #FFF;
+  padding: 20px;
+  width: 50%;
+  margin: 5% auto;
+  gap: 1px;
+  align-items: center;
+}
+.modal .modal-content .modal-body {
+  display: flex;
+  justify-content: center;
+  width: 109%;
+  padding: 20px 0;
+  align-self: center;
+}
+.modal .modal-content .modal-body img {
+  width: 20%;
+}
+.modal .modal-content .modal-footer {
+  color: #000;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.modal .modal-content .modal-footer .stat {
+  background: #FFF;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 10px 10px 22px 4px rgba(0, 0, 0, 0.28);
+}
+.modal .modal-content .modal-footer .stat .stats-bar {
+  background: rgba(0, 0, 0, 0.1333333333);
+  width: 100%;
+  margin: 0 10px;
+  height: 5px;
+}
+.modal .modal-content .modal-footer .stat .stats-bar .stats-fill {
+  height: 5px;
+  background: #e8f803;
+}/*# sourceMappingURL=Pokemodal.css.map */

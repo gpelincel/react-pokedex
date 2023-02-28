@@ -1,12 +1,49 @@
 .card {
-  width: auto;
-  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: -moz-min-content;
+  height: min-content;
   text-align: center;
-  padding: 15px;
-  border-radius: 5px;
+  border-radius: 7px 7px 5px 5px;
+  text-transform: capitalize;
+  background: #FFF;
+  padding: 0 0 5px 0;
 }
-.card .card-body img {
-  width: 15vw;
+.card .type-wrapper {
+  z-index: 0;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+.card .type-wrapper .info-icon {
+  position: absolute;
+  right: 0;
+  height: 30px;
+  padding: 5px;
+  fill: #FFF;
+  cursor: pointer;
+}
+.card .type-wrapper .type-icon {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  opacity: 30%;
+  right: -50px;
+  top: -50px;
+  z-index: -1;
+}
+.card .type-wrapper .card-header h2 {
+  color: #FFF;
+}
+.card .type-wrapper .card-body {
+  position: relative;
+}
+.card .type-wrapper .card-body img {
+  z-index: 2;
+  width: 10vw;
+  height: 10vw;
+  padding-bottom: 50px;
 }
 .card .card-footer {
   display: flex;
@@ -15,7 +52,7 @@
   gap: 5px;
 }
 .card .card-footer .type-pill {
-  background: greenyellow;
+  text-transform: capitalize;
   padding: 8px;
-  border-radius: 20px;
+  border-radius: 5px;
 }/*# sourceMappingURL=Pokecard.css.map */

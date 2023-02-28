@@ -14,30 +14,34 @@ function Pokecard(props) {
             .catch((err) => console.log(err));
     }, []);
 
+
+
     if (stats?.types !== undefined) {
 
+        stats.mainType = stats?.types[0];
+
         pokemonTypes.map(type => {
-            if (type.name === stats?.types[0].type.name) {
-                stats.types[0].color = type.color;
+            if (type.name === stats?.mainType.type.name) {
+                stats.mainType.color = type.color;
             }
         });
 
-        let img = require(`../../assets/icons/${stats.types[0].type.name}.svg`);
-
         return (
             <div className="card">
-
                 <div className="type-wrapper" style={{
-                    background: stats.types[0].color
+                    background: stats.mainType.color
                 }}>
-                    <img src={img} alt="" className="type-icon" />
+                    <img src={require(`../../assets/icons/${stats.mainType.type.name}.svg`)} alt="" className="type-icon" />
 
+                    <svg onClick={() => {
+                        props.modalController("");
+                    }} className='info-icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" /></svg>
 
                     <div className="card-header">
-                        <h1>{props.name}</h1>
+                        <h2>{props.name}</h2>
                     </div>
                     <div className="card-body">
-                        <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${props.id}.png`} alt="" />
+                        <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${props.id}.svg`} alt="" />
                     </div>
                 </div>
                 <div className="card-footer">
@@ -46,7 +50,7 @@ function Pokecard(props) {
                             let typeName = type.type.name;
 
                             pokemonTypes.map(color => {
-                                if (color.name === type.type.name) {
+                                if (color.name === typeName) {
                                     type.color = color.color;
                                 }
                             });
