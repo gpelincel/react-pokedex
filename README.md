@@ -14,4 +14,8 @@ This project was created, mostly, to learn about React, but also to choose wich 
 
 - [X] List all pokemons
 - [ ] List a pokemon individually
+<<<<<<< HEAD
 - [ ] Search system
+=======
+- [ ] Search system
+>>>>>>> 151ac94f663f30a572bdcebf14a35d3221bb7aa6
