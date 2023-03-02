@@ -13,7 +13,7 @@ This project was created, mostly, to learn about React, but also to choose wich 
 ### Todo list
 
 - [X] List all pokemons
-- [ ] List a pokemon individually
+- [X] List a pokemon individually
 <<<<<<< HEAD
 - [ ] Search system
 =======
