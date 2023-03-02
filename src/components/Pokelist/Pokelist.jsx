@@ -15,14 +15,14 @@ function Pokelist() {
             .catch((err) => console.log(err));
     }, []);
 
-    const [modal, setModal] = useState("");
+    const [modal, setModal] = useState("hidden");
+    const [pokemonModal, setPokemonModal] = useState("");
 
-
-    const modalController = (modalData) => {
-        setModal(modalData);
+    function modalController(modalState, pokemon = null) {
+        setModal(modalState);
+        setPokemonModal(pokemon);
     }
 
-    console.log(modal);
 
     return (
         <main>
@@ -35,7 +35,7 @@ function Pokelist() {
                     )
                 })}
             </div>
-            <Pokemodal state={modal}></Pokemodal>
+            <Pokemodal modalController={modalController} state={modal} pokemon={pokemonModal}></Pokemodal>
         </main>
     )
 }
