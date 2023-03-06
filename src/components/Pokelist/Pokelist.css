@@ -4,4 +4,15 @@ main .pokegrid {
   gap: 20px;
   background: #2E2140;
   padding: 40px;
+}
+
+@media (max-width: 480px) {
+  main .pokegrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 768px) and (min-width: 481px) {
+  main .pokegrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=Pokelist.css.map */

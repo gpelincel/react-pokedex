@@ -10,16 +10,32 @@ header .logo {
   display: flex;
   height: 10vh;
 }
-header .search-input {
-  width: 25%;
+header .developed {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-header .search-input input {
-  border: none;
-  border-radius: 5px;
-  padding: 8px;
-  width: 100%;
-  font-size: 1.5em;
+header .developed a .git-icon {
+  width: 40px;
+  height: 40px;
+  fill: #FFF;
 }
-header .search-input input:focus {
-  outline: none;
+
+@media (max-width: 480px) {
+  header h2 {
+    font-size: 1.6em;
+  }
+  header .developed {
+    display: none;
+  }
+}
+@media (max-width: 768px) and (min-width: 481px) {
+  header h2 {
+    font-size: 1.6em;
+  }
+  header .developed {
+    display: none;
+  }
 }/*# sourceMappingURL=Header.css.map */

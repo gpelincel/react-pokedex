@@ -11,18 +11,42 @@ header {
         height: 10vh;
     }
 
-    .search-input {
-        width: 25%;
-        input {
-            border: none;
-            border-radius: 5px;
-            padding: 8px;
-            width: 100%;
-            font-size: 1.5em;
+    .developed {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: fit-content;
+
+        a {
+            .git-icon {
+                width: 40px;
+                height: 40px;
+                fill: #FFF;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        h2 {
+            font-size: 1.6em;
         }
 
-        input:focus{
-            outline: none;
+        .developed {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    header {
+        h2 {
+            font-size: 1.6em;
+        }
+
+        .developed {
+            display: none;
         }
     }
 }

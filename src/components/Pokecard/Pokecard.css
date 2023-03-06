@@ -35,14 +35,15 @@
 }
 .card .type-wrapper .card-header h2 {
   color: #FFF;
+  font-size: 1em;
 }
 .card .type-wrapper .card-body {
   position: relative;
 }
 .card .type-wrapper .card-body img {
   z-index: 2;
-  width: 10vw;
-  height: 10vw;
+  width: 12vw;
+  height: 15vw;
   padding-bottom: 50px;
 }
 .card .card-footer {
@@ -55,4 +56,5 @@
   text-transform: capitalize;
   padding: 8px;
   border-radius: 5px;
+  font-size: 0.7em;
 }/*# sourceMappingURL=Pokecard.css.map */

@@ -1,1 +1,1 @@
-{"version":3,"sources":["Pokelist.scss","Pokelist.css"],"names":[],"mappings":"AACI;EACI,aAAA;EACA,qCAAA;EACA,SAAA;EACA,mBAAA;EACA,aAAA;ACAR","file":"Pokelist.css"}
+{"version":3,"sources":["Pokelist.scss","Pokelist.css"],"names":[],"mappings":"AACI;EACI,aAAA;EACA,qCAAA;EACA,SAAA;EACA,mBAAA;EACA,aAAA;ACAR;;ADIA;EAEQ;IACI,qCAAA;ECFV;AACF;ADMA;EAEQ;IACI,qCAAA;ECLV;AACF","file":"Pokelist.css"}

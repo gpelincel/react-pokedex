@@ -17,7 +17,7 @@
   border-radius: 5px;
   color: #FFF;
   padding: 20px;
-  width: 50%;
+  width: 60%;
   margin: 5% auto;
   gap: 1px;
   align-items: center;
@@ -72,7 +72,7 @@
 .modal .modal-content .modal-footer .stat .stats-bar {
   flex-grow: 1;
   background: rgba(0, 0, 0, 0.1333333333);
-  width: 100%;
+  width: auto;
   margin: 0 10px;
   height: 5px;
 }
@@ -84,4 +84,17 @@
   font-size: 0.8em;
   width: -moz-min-content;
   width: min-content;
+}
+
+@media (max-width: 768px) {
+  .modal .modal-content {
+    width: 75%;
+    font-size: 0.6em;
+  }
+  img {
+    width: 25vw;
+  }
+  .stat {
+    font-size: 0.6em;
+  }
 }/*# sourceMappingURL=Pokemodal.css.map */

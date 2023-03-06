@@ -17,7 +17,7 @@
         border-radius: 5px;
         color: #FFF;
         padding: 20px;
-        width: 50%;
+        width: 60%;
         margin: 5% auto;
         gap: 1px;
         align-items: center;
@@ -69,9 +69,6 @@
                 padding: 10px;
                 display: flex;
                 align-items: center;
-                // -webkit-box-shadow: 10px 10px 22px 4px rgba(0, 0, 0, 0.28);
-                // -moz-box-shadow: 10px 10px 22px 4px rgba(0, 0, 0, 0.28);
-                // box-shadow: 10px 10px 22px 4px rgba(0, 0, 0, 0.28);
 
                 .stat-name {
                     width: 30%;
@@ -81,7 +78,7 @@
                 .stats-bar {
                     flex-grow: 1;
                     background: #0002;
-                    width: 100%;
+                    width: auto;
                     margin: 0 10px;
                     height: 5px;
 
@@ -97,5 +94,22 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 768px){
+    .modal{
+        .modal-content{
+            width: 75%;
+            font-size: 0.6em;
+        }
+    }
+    
+    img{
+     width: 25vw;   
+    }
+
+    .stat{
+        font-size: 0.6em;
     }
 }
