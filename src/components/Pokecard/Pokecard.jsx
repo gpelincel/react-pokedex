@@ -31,7 +31,7 @@ function Pokecard(props) {
                 <div className="type-wrapper" style={{
                     background: stats.mainType.color
                 }}>
-                    <img src={require(`../../assets/icons/${stats.mainType.type.name}.svg`)} alt="" className="type-icon" />
+                    <img src={require(`./../../Assets/icons/${stats.mainType.type.name}.svg`)} alt="" className="type-icon" />
 
                     <svg onClick={() => {
                         props.modalController("", stats);
