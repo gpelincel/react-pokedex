@@ -1,13 +1,10 @@
 import './Header.css';
-import logo from './../../assets/img/logo.gif';
-
-console.log(logo);
 
 function Header() {
     return (
         <header>
             <div className="logo">
-                <img src={logo} alt="logo-gif" />
+                <img src={require('../../assets/img/logo.gif')} alt="logo-gif" />
                 <h2>Pokedex</h2>
             </div>
             <div className="developed">
