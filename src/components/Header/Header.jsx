@@ -4,7 +4,7 @@ function Header() {
     return (
         <header>
             <div className="logo">
-                <img src={require('../../assets/img/logo.gif')} alt="logo-gif" />
+                <img src={require('./../../assets/img/logo.gif')} alt="logo-gif" />
                 <h2>Pokedex</h2>
             </div>
             <div className="developed">
